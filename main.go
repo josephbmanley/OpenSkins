@@ -3,10 +3,13 @@ package main
 import (
 	"fmt"
 	"github.com/josephbmanley/OpenSkins/pluginmanager"
+	"github.com/josephbmanley/OpenSkins/runtime"
 	log "github.com/sirupsen/logrus"
 	"os"
 	"plugin"
 )
+
+var appRuntime = "webserver"
 
 const plugindirectory = "./plugins"
 
@@ -37,7 +40,12 @@ func main() {
 		os.Exit(1)
 	}
 
-	log.Fatalln("Runtime is currently not implemented!")
-	os.Exit(1)
+	switch appRuntime {
+	case "webserver":
+		runtime.StartWebserver()
+	default:
+		log.Fatalln("Runtime is currently not implemented!")
+		os.Exit(1)
+	}
 
 }

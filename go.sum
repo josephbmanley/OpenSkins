@@ -1,5 +1,7 @@
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
+github.com/gorilla/mux v1.8.0 h1:i40aqfkR1h2SlN9hojwV5ZA91wcXFOvkdNIeFDP5koI=
+github.com/gorilla/mux v1.8.0/go.mod h1:DVbg23sWSpFRCP0SfiEN6jmj59UnW/n46BH5rLB71So=
 github.com/josephbmanley/OpenSkins-Common v0.0.0-20201226022245-12099a28475a h1:bW/ahOovqRP2r1Ynp4WXxrOCiHq1vqye8RFyYLIZ6hg=
 github.com/josephbmanley/OpenSkins-Common v0.0.0-20201226022245-12099a28475a/go.mod h1:xmRLNQLOMLqiQ2hzP81mdsNbu6ZxyLozoVWaR2A0BMY=
 github.com/josephbmanley/OpenSkins-Common v0.0.0-20201227051624-01b75eb56779 h1:ArCBRyblBk/x0BGgNu6gJ7j7kNvn91K7OmpOHpHUwAs=
@@ -10,6 +12,8 @@ github.com/josephbmanley/OpenSkins-Common v0.0.0-20201227060121-852c176c7219 h1:
 github.com/josephbmanley/OpenSkins-Common v0.0.0-20201227060121-852c176c7219/go.mod h1:xmRLNQLOMLqiQ2hzP81mdsNbu6ZxyLozoVWaR2A0BMY=
 github.com/josephbmanley/OpenSkins-Common v0.0.0-20201227061123-22199a5c0ab9 h1:rEfQZyiAKIKchefT4uUGojwLVPDEylORTOU1/l+VEQU=
 github.com/josephbmanley/OpenSkins-Common v0.0.0-20201227061123-22199a5c0ab9/go.mod h1:xmRLNQLOMLqiQ2hzP81mdsNbu6ZxyLozoVWaR2A0BMY=
+github.com/josephbmanley/OpenSkins-Common v0.0.0-20201227072620-649a4ef8820a h1:BVoRW4lVzSDTUGanOxoKnPIvVcRhY5v6h3j0pOlV/DY=
+github.com/josephbmanley/OpenSkins-Common v0.0.0-20201227072620-649a4ef8820a/go.mod h1:xmRLNQLOMLqiQ2hzP81mdsNbu6ZxyLozoVWaR2A0BMY=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/sirupsen/logrus v1.7.0 h1:ShrD1U9pZB12TX0cVy0DtePoCH97K8EtX+mg7ZARUtM=
