@@ -37,4 +37,7 @@ func main() {
 		os.Exit(1)
 	}
 
+	log.Fatalln("Runtime is currently not implemented!")
+	os.Exit(1)
+
 }
