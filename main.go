@@ -43,7 +43,7 @@ func main() {
 
 	switch appRuntime {
 	case "webserver":
-		runtime.StartWebserver()
+		runtime.StartWebserver(8081)
 	default:
 		log.Fatalln("Runtime is currently not implemented!")
 		os.Exit(1)

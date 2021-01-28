@@ -48,9 +48,9 @@ func getCharacter(w http.ResponseWriter, r *http.Request) {
 }
 
 // StartWebserver starts the webserver
-func StartWebserver() {
+func StartWebserver(port int) {
 	myRouter := mux.NewRouter().StrictSlash(true)
 	myRouter.HandleFunc("/health", healthCheck)
 	myRouter.HandleFunc("/get/character/{user}/{char}", getCharacter)
-	log.Fatal(http.ListenAndServe(":8081", myRouter))
+	log.Fatal(http.ListenAndServe(fmt.Sprintf(":%d", port), myRouter))
 }
