@@ -17,7 +17,8 @@ func main() {
 
 	pluginFiles, err := pluginmanager.GetPlugins(plugindirectory)
 	if err != nil {
-		log.Warningln(fmt.Sprintf("Failed to read plugins directory: %v", err.Error()))
+		log.Fatalln(fmt.Sprintf("Failed to read plugins directory: %v", err.Error()))
+		os.Exit(1)
 	}
 
 	loadedPlugins := []*plugin.Plugin{}
