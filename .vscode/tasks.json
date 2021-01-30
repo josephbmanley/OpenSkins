@@ -1,0 +1,40 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "compile",
+            "type": "shell",
+            "command": "make compile"
+        },
+        {
+            "label": "install",
+            "type": "shell",
+            "command": "make install"
+        },
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "make clean"
+        },
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "make build"
+        },
+        {
+            "label": "run",
+            "type": "shell",
+            "command": "make run"
+        },
+        {
+            "label": "test",
+            "type": "shell",
+            "command": "make test"
+        },
+        {
+            "label": "standalone",
+            "type": "shell",
+            "command": "make standalone"
+        }
+    ]
+}

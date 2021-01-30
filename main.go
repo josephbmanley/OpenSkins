@@ -3,10 +3,13 @@ package main
 import (
 	"fmt"
 	"github.com/josephbmanley/OpenSkins/pluginmanager"
+	"github.com/josephbmanley/OpenSkins/runtime"
 	log "github.com/sirupsen/logrus"
 	"os"
 	"plugin"
 )
+
+var appRuntime = "webserver"
 
 const plugindirectory = "./plugins"
 
@@ -14,7 +17,8 @@ func main() {
 
 	pluginFiles, err := pluginmanager.GetPlugins(plugindirectory)
 	if err != nil {
-		log.Warningln(fmt.Sprintf("Failed to read plugins directory: %v", err.Error()))
+		log.Fatalln(fmt.Sprintf("Failed to read plugins directory: %v", err.Error()))
+		os.Exit(1)
 	}
 
 	loadedPlugins := []*plugin.Plugin{}
@@ -37,7 +41,12 @@ func main() {
 		os.Exit(1)
 	}
 
-	log.Fatalln("Runtime is currently not implemented!")
-	os.Exit(1)
+	switch appRuntime {
+	case "webserver":
+		runtime.StartWebserver(8080) // Start on port 8080
+	default:
+		log.Fatalln("Runtime is currently not implemented!")
+		os.Exit(1)
+	}
 
 }
