@@ -30,6 +30,11 @@
             "label": "test",
             "type": "shell",
             "command": "make test"
+        },
+        {
+            "label": "standalone",
+            "type": "shell",
+            "command": "make standalone"
         }
     ]
 }

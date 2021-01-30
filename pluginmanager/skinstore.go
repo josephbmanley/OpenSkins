@@ -16,6 +16,7 @@ var LoadedSkinstores []datastore.Skinstore = []datastore.Skinstore{}
 func LoadSkinstores(plugins []*plugin.Plugin) error {
 
 	for _, plugin := range plugins {
+		log.Debug("Looking for skinstore in plugin...")
 
 		symSkinstore, err := plugin.Lookup("SkinstoreModule")
 		if err != nil {
@@ -33,6 +34,7 @@ func LoadSkinstores(plugins []*plugin.Plugin) error {
 			return err
 		}
 
+		log.Info("Loaded new skinstore!")
 		LoadedSkinstores = append(LoadedSkinstores, skinstore)
 	}
 	return nil
